@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./recursos/imgs/logo/logo.png" alt="Logo del Taller de Luthería Bruno Santillán">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+        </nav>
+        <h1>Bienvenido al Taller de Luthería Bruno Santillán</h1>
+        <p><em>Cuidado minucioso, acústica precisa y preservación de instrumentos de cuerda.</em></p> <!-- em para destacar-->
+    </header>
+
+    <main>
+        <section>
+            <img src="./recursos/imgs/maincontent/index/violines.jpg" alt="Violines en un admario">
+
+            <form action="#" method="post">
+
+
+                <p>
+                    <label for="nombre">Nombre completo del músico o titular:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono móvil para coordinación de turno:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="instrumento">Tipo de instrumento a ingresar:</label>
+                    <select id="instrumento" name="instrumento" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="violin">Violín</option>
+                        <option value="viola">Viola</option>
+                        <option value="violonchelo">Violonchelo</option>
+                        <option value="contrabajo">Contrabajo</option>
+                        <option value="guitarra">Guitarra clásica / española</option>
+                        <option value="otro">Otro instrumento de cuerda</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="procedencia">Antigüedad o procedencia aproximada (autor, fábrica o año si se conoce):</label>
+                    <input type="text" id="procedencia" name="procedencia">
+                </p>
+
+                 <section>
+                    <label for="Motivo">Motivo principal de la consulta:</label>
+                    <input type="radio" id="consulta" name="motivo" value="consulta" required>
+                    <label for="consulta">Consulta general</label>
+                    <input type="radio" id="reparacion" name="motivo" value="reparacion" required>
+                    <label for="reparacion">Reparación estructural o de barniz</label>
+                    <input type="radio" id="mantenimiento" name="motivo" value="mantenimiento" required>
+                    <label for="mantenimiento">Mantenimiento y puesta a punto</label>
+                    <input type="radio" id="construccion" name="motivo" value="construccion" required>
+                    <label for="construccion">Construcción por encargo</label>
+                </section>
+
+
+                <p>
+                    <label for="descripcion">Descripción detallada del problema o síntomas sonoros (ruidos extraños, cerdeos o golpes sufridos):</label>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                    <label for="condiciones">Comprendo que el presupuesto definitivo solo se emitirá tras la inspección física del instrumento en el banco de trabajo</label>
+                </p>
+
+
+                <p>
+                    <input type="submit" value="Registrar pedido de turno">
+                </p>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taller de Luthería Bruno Santillán. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
