@@ -47,8 +47,8 @@ for (let i = 0; i < 20; i++) {
 //Ejercicio 2.d
 for (let i = 0; i < 20; i++) {
   if (i % 2 === 0) {
-    console.log(`El número ${i} es par`);
+    console.log('El número' + i +  'es par');
   } else {
-    console.log(`El número ${i} es impar`);
+    console.log('El número' + i + 'es impar');
   }
 }
