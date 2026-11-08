@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Lucía Fernández Fotografía</title>
+    <link rel="stylesheet" href="./Recursos/estilos/base.css">
+    <link rel="stylesheet" href="./Recursos/estilos/contacto.css">
+    <link rel="icon" type="image/png" href="./Recursos/imagenes/fotografia.png">
+</head>
+<body>
+    <header class="encabezado-principal">
+        <a class="marca" href="./index.html" aria-label="Ir al inicio">
+            <img src="./Recursos/imagenes/fotografia.png" alt="Logo de fotografía">
+        </a>
+        <nav class="navegacion-principal">
+            <a href="./index.html">Quién soy / Servicios</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <h1>Contactame</h1>
+        <section class="presentacion-contacto">
+            <h2>Contame sobre tu proyecto</h2>
+            <p>Si querés consultar disponibilidad, solicitar un presupuesto o conocer más sobre mis servicios, completá el siguiente formulario con tus datos y contame brevemente qué tipo de trabajo fotográfico estás buscando.</p>
+            <p>La información proporcionada será utilizada únicamente para poder responder tu consulta y conocer mejor las características de tu proyecto o evento.</p>
+        </section>
+
+        <form action="./contacto.html" method="post">
+            <fieldset class="datos-contacto">
+                <legend>Tus datos</legend>
+                <label for="id-nombre">Nombre</label>
+                <input type="text" name="nombre" id="id-nombre" required>
+                <label for="id-apellido">Apellido</label>
+                <input type="text" name="apellido" id="id-apellido" required>
+                <label for="id-email">Email</label>
+                <input type="email" name="email" id="id-email" required>
+                <label for="id-telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="id-telefono" required>
+            </fieldset>
+
+            <fieldset class="detalles-servicio">
+                <legend>Detalles del trabajo</legend>
+                <label for="id-tipo-servicio">Tipo de servicio</label>
+                <select name="tipo-servicio" id="id-tipo-servicio" required>
+                    <option value="1">Fotografía de eventos</option>
+                    <option value="2">Sesión de retrato</option>
+                    <option value="3">Fotografía para emprendimiento</option>
+                    <option value="4">Otro</option>
+                </select>
+                <label for="id-fecha-evento">Fecha del evento</label>
+                <input type="date" name="fecha-evento" id="id-fecha-evento" required>
+                <label for="id-lugar-evento">Lugar del evento</label>
+                <input type="text" name="lugar-evento" id="id-lugar-evento">
+                <label for="id-cantidad-personas">Cantidad aproximada de personas</label>
+                <input type="number" name="cantidad-personas" id="id-cantidad-personas">
+                <label for="id-comentario">Contame qué tipo de fotografías necesitás, qué estás organizando y cualquier otro detalle que consideres importante.</label>
+                <textarea name="comentario" id="id-comentario" required></textarea>
+                <label for="id-conocer-trabajo">Contame cómo conociste mi trabajo</label>
+                <select name="conocer-trabajo" id="id-conocer-trabajo" required>
+                    <option value="1">Instagram</option>
+                    <option value="2">Recomendación</option>
+                    <option value="3">Búsqueda en internet</option>
+                    <option value="0">Otro</option>
+                </select>
+            </fieldset>
+
+            <div class="acciones-formulario">
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar consulta</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="pie-principal">
+        <ul>
+            <li><a href="https://www.instagram.com/luciafernandezFotografa/" target="_blank" rel="noopener noreferrer">@luciafernandezFotografa</a></li>
+            <li>Bv. San Juan 670 - Bº Nueva Córdoba</li>
+        </ul>
+    </footer>
+
+    <a class="mensajeria" href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp" title="Consultar por WhatsApp">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+            <path d="M8 10h8M8 14h5"></path>
+        </svg>
+    </a>
+</body>
+</html>
