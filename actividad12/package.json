@@ -1,0 +1,12 @@
+{
+  "name": "actividad12",
+  "version": "1.0.0",
+  "description": "Ejercicios de arreglos y objetos de JavaScript",
+  "private": true,
+  "scripts": {
+    "dev": "five-server"
+  },
+  "devDependencies": {
+    "five-server": "^0.5.0"
+  }
+}

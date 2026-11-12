@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de consulta y reservas de Retiro Sustentable.">
+    <title>Retiro Sustentable | Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <a class="marca" href="./index.html" aria-label="Ir al inicio de Retiro Sustentable">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Retiro Sustentable">
+        </a>
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+            <a href="./index.html">Cabañas</a>
+            <a href="./reservas.html" aria-current="page">Reservas</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="formulario-seccion" aria-labelledby="titulo-reservas">
+            <div class="encabezado-seccion">
+                <p class="etiqueta">Tu próxima escapada</p>
+                <h1 id="titulo-reservas">Consultá por tu reserva</h1>
+                <p>Completá tus datos y te contactaremos para confirmar disponibilidad y tarifa.</p>
+            </div>
+
+            <!-- El formulario usa POST y un action explícito para que los datos puedan procesarse en el servidor. -->
+            <form class="formulario-reserva" action="./reservas.html" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="fila-campos">
+                    <div class="campo">
+                        <label for="fecha-desde">Fecha desde</label>
+                        <input type="date" id="fecha-desde" name="fecha_desde" required>
+                    </div>
+                    <div class="campo">
+                        <label for="fecha-hasta">Fecha hasta</label>
+                        <input type="date" id="fecha-hasta" name="fecha_hasta" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Contanos qué necesitás para tu estadía."></textarea>
+                </div>
+                <button class="boton boton-principal" type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-principal">
+        <p>Retiro Sustentable</p>
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
